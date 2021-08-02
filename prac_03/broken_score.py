@@ -3,6 +3,10 @@ CP1404/CP5632 - Practical
 Broken program to determine score status
 """
 
+import random
+
+dir(random)
+
 
 def score_status(score):
     if score < 0:
@@ -20,6 +24,11 @@ def score_status(score):
 def main():
     score = float(input("Enter score: "))
     score_status(score)
+    generate_score()
+
+
+def generate_score():
+    print(random.randrange(100))
 
 
 main()
