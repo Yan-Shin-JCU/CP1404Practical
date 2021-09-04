@@ -27,7 +27,20 @@ def min_max(num_list):
 
 
 def average(num_list):
-    print('The average number is {}'.format(sum(num_list)/len(num_list)))
+    print('The average number is {}'.format(sum(num_list) / len(num_list)))
 
+
+def name_check():
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface',
+                 'BaseStdIn',
+                 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer', 'bob']
+    input_name = input('Type username: ')
+    if input_name in usernames:
+        print('Access Granted')
+    else:
+        print('Access Denied')
+
+
+name_check()
 
 main()
