@@ -1,10 +1,8 @@
 class ProgrammingLanguage():
-    """DocString"""
+    """Represents a Programming Language Object"""
 
     def __init__(self,name, typing, reflection, year):
-        """Initialise a Car instance.
-
-        fuel: float, one unit of fuel drives one kilometre
+        """Initialise the ProgrammingLanguage instance.
         """
         self.name = name
         self.typing = typing
@@ -16,7 +14,7 @@ class ProgrammingLanguage():
                                                                            str(self.reflection), str(self.year))
 
     def is_dynamic(self):
-        """Add amount to the car's fuel."""
+        """Checks if dynamic and returns Boolean value"""
         if self.typing == 'Dynamic':
             return True
         else:
